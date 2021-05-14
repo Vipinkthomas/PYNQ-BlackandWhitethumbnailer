@@ -9,8 +9,8 @@
 // all 1-pixel modes, and for upscale in x direction
 #define MAXDOWNSCALE 2
 
-#define RGB 1
-#define GRAY 0
+#define RGB 0
+#define GRAY 1
 /* Interpolation type*/
 #define INTERPOLATION 1
 // 0 - Nearest Neighbor Interpolation
