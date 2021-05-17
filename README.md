@@ -1,24 +1,17 @@
-# Image resizer using Vitis library
+## Resizing black and white images using Software-only (PS) and Hardware accelerated (PL)
+In this notebook we are introducing two methods for resizing multiple black and white images to thumbnails (64 * 64)px: 
+hardware accelerated (PL) and software-only (PS) respectively
 
-Memory-mapped version of the [PYNQ-Helloworld](https://github.com/Xilinx/PYNQ-HelloWorld) using the newest Vitis libraries.
+Algorithms used:
 
-## Building 
+1. Nearest Neighbour
+2. BILINEAR
 
-Compile and create the Vivado project:
+How to use:
 
-```sh
-make vitis_lib
-make rtl-proj
-```
+- clone the project on a PYNQ-z2 board : `git clone https://mygit.th-deg.de/mh02127/black_white_resizer.git`
+- install the required packages: 
 
-Open `rtl/rtl.xpr` usign Vivado and interconnect the design using connect automation or run `block_design.tcl`. Then build the bitstream using:
+requests: `pip3 install requests`
 
-```sh
-make
-```
-
-or the Vivado GUI. `make` will additionally create symbolic links to the handoff and overlay in the working directory.
-
-## Using
-
-Follow [using the overlay section](https://mygit.th-deg.de/gaydos/fa-notes/-/blob/master/synthesizing-the-image-resizer.md#using-the-overlay)
+bs4 : `pip3 install bs4`
